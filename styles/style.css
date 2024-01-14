@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --primary-color:#757575;
+    --secondary-color:#5856d6;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.nav-option a{
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--primary-color);
+
+}
+.night-mode{
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main styles */
+.main-accessibility{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.accessibility-design{
+    width: 100%;
+}
+.accessibility-design a{
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.accessibility-title{
+    font-size: 4rem;
+    letter-spacing: 1px;
+    margin: 0px;
+
+}
+.design-des{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.btn-primary{
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 7px;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.options-list p{
+    display: inline-block;
+}
+.options small{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    padding-right: 10px;
+}
+.options img{
+    padding-right: 1px;
+}
+.accessibility-img img{
+    width: 100%;
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:576px) {
+    body{
+        width: 90%;
+    }
+    .nav-option{
+        display: none;
+    }
+    .main-accessibility{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .accessibility-title {
+        font-size: 2rem;
+    }
+    .options-list p {
+        font-size: .9rem;
+        width: 49%;
+    }
+    .options small{
+        padding-right: 0;
+    }
+}
